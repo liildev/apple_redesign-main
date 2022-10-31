@@ -48,8 +48,11 @@ export default function Header() {
         <a className="headerLink">Explore</a>
         <a className="headerLink">Support</a>
         <a className="headerLink">Business</a>
-        <a className="headerLink" onClick={() => signIn()}>Sign In</a>
-        <a className="headerLink" onClick={() => signOut()}>Sign Out</a>
+        {session ?
+          <a className="headerLink" onClick={() => signOut()}>Sign Out</a>
+          :
+          <a className="headerLink" onClick={() => signIn()}>Sign In</a>
+        }
       </ul>
       <div className="flex items-center justify-center gap-x-4 md:w-1/5">
         <SearchIcon className="headerIcon hidden md:block" />
@@ -103,8 +106,11 @@ export default function Header() {
           <a className="menuLink">Explore</a>
           <a className="menuLink">Support</a>
           <a className="menuLink">Business</a>
-          <a className="menuLink" onClick={() => signIn()}>Sign In</a>
-          <a className="menuLink" onClick={() => signOut()}>Sign Out</a>
+          {session ?
+            <a className="menuLink" onClick={() => signOut()}>Sign Out</a>
+            :
+            <a className="menuLink" onClick={() => signIn()}>Sign In</a>
+          }
         </ul>
       </div>
     </header>
