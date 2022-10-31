@@ -54,6 +54,7 @@ export default function Header() {
           <a className="headerLink" onClick={() => signIn()}>Sign In</a>
         }
       </ul>
+
       <div className="flex items-center justify-center gap-x-4 md:w-1/5">
         <SearchIcon className="headerIcon hidden md:block" />
         <Link href="/checkout">
@@ -83,7 +84,7 @@ export default function Header() {
           }`}
         onClick={() => setShow(false)}
       >
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between mt-2">
           <input type="text" placeholder="Search..." className="w-full mr-3 bg-gray-300 rounded-md p-1.5" />
           {session ? (
             <Image
@@ -100,6 +101,7 @@ export default function Header() {
             <UserIcon className="headerIcon" />
           )}
         </div>
+
         <ul className="flex flex-col items-start
     border-gray-300 divide-y cursor-pointer">
           <a className="menuLink">Product</a>

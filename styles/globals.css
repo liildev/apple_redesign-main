@@ -16,7 +16,7 @@
   }
 
   .headerIcon {
-    @apply !h-6 !w-6 cursor-pointer opacity-75 transition hover:opacity-100;
+    @apply !h-7 !w-7 cursor-pointer opacity-75 transition hover:opacity-100;
   }
 
   .link {
@@ -36,11 +36,11 @@
   }
 
   .payment {
-    @apply flex flex-1 flex-col items-center rounded-xl bg-gray-300 px-4 py-2 text-center ss:px-8 ss:py-12;
+    @apply flex flex-1 z-10 flex-col items-center rounded-xl bg-gray-200 px-4 py-2 text-center ss:px-8 ss:py-12;
   }
 
   .menu {
-    @apply absolute top-16 z-10 h-screen w-full bg-gradient-to-tl from-white/10 to-[#483D8B] px-7 ss:px-14 py-4 backdrop-blur-lg transition-all duration-700 md:hidden;
+    @apply absolute top-16 z-50 h-screen w-full bg-gradient-to-tl from-white/10 to-[#483D8B] px-7 ss:px-14 py-4 backdrop-blur-lg transition-all duration-700 md:hidden;
   }
 
   .menuLink {
