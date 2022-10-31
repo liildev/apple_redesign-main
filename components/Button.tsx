@@ -10,7 +10,7 @@ interface Props {
 export default function Button({ title, onClick, width, loading, padding, noIcon }: Props) {
     return (
         <button
-            className={`ease group relative z-30 box-border inline-flex ${width ? width : "w-auto"
+            className={`ease group relative z-10 box-border inline-flex ${width ? width : "w-auto"
                 } ${padding} cursor-pointer items-center justify-center overflow-hidden rounded bg-indigo-600 bg-gradient-to-r from-pink-500 to-violet-500 px-5 py-2 ss:px-8 ss:py-3 font-bold text-white transition-all duration-300 focus:outline-none`}
             onClick={onClick}
         >
