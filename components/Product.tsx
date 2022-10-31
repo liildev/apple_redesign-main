@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { ShoppingCartIcon } from "@heroicons/react/outline";
 import { urlFor } from "../sanity";
+import { ShoppingCartIcon } from "@heroicons/react/outline";
 import { useDispatch } from "react-redux";
 import { addToBasket } from "../store/features/basketSlice";
 import toast from "react-hot-toast";

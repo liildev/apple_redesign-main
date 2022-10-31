@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { useSelector } from "react-redux";
-import { useMediaQuery } from "react-responsive";
 import { selectBasketItems } from "../store/features/basketSlice";
 import { signIn, signOut, useSession } from "next-auth/react";
 import {

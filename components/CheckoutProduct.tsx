@@ -1,10 +1,10 @@
-import { ChevronDownIcon } from "@heroicons/react/outline";
 import Image from "next/image";
-import { urlFor } from "../sanity";
 import Currency from "react-currency-formatter";
-import { removeFromBasket } from "../store/features/basketSlice";
-import { useDispatch } from "react-redux";
 import toast from "react-hot-toast";
+import { urlFor } from "../sanity";
+import { useDispatch } from "react-redux";
+import { removeFromBasket } from "../store/features/basketSlice";
+import { ChevronDownIcon } from "@heroicons/react/outline";
 
 interface Props {
     items: Product[];

@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "../components/Button";
+import Order from "../components/Order";
 import { useRouter } from "next/router";
 import { GetServerSideProps } from "next";
 import { useEffect, useState } from "react";
@@ -9,7 +10,6 @@ import { useMediaQuery } from "react-responsive";
 import { fetchLineItems } from "../utils/fetchLineItems";
 import { useSession } from "next-auth/react";
 import { CheckIcon } from "@heroicons/react/outline";
-import Order from "../components/Order";
 
 interface Props {
     products: StripeProduct[];
