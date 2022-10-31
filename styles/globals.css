@@ -20,7 +20,7 @@
   }
 
   .link {
-    @apply relative cursor-pointer text-lg font-medium before:absolute before:inset-x-0 before:-bottom-1.5 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-black before:transition-all before:duration-200 hover:before:scale-x-100;
+    @apply relative cursor-pointer text-[16px] ss:text-lg font-medium before:absolute before:inset-x-0 before:-bottom-1.5 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-black before:transition-all before:duration-200 hover:before:scale-x-100;
   }
 
   .borderGradient {
@@ -36,7 +36,7 @@
   }
 
   .payment {
-    @apply flex flex-1 flex-col items-center rounded-xl bg-gray-200 px-4 py-6 text-center ss:px-8 ss:py-12;
+    @apply flex flex-1 flex-col items-center rounded-xl bg-gray-300 px-4 py-2 text-center ss:px-8 ss:py-12;
   }
 
   .menu {

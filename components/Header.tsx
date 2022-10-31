@@ -24,10 +24,10 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-30 flex w-full items-center justify-between bg-[#E7ECEE] p-4">
       <button onClick={handleShow} className="block md:hidden">
-        {show ? <XIcon className="headerIcon ml-2"
+        {show ? <XIcon className="headerIcon"
         />
           :
-          <MenuIcon className="headerIcon ml-2"
+          <MenuIcon className="headerIcon"
           />
         }
       </button>

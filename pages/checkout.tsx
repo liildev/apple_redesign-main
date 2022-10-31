@@ -58,7 +58,7 @@ export default function Checkout() {
   return (
     <MainLayout title="Bag">
       <div className="min-h-screen overflow-hidden bg-[#E7ECEE]">
-        <div className="mx-auto max-w-5xl pb-24 px-5">
+        <div className="mx-auto max-w-5xl pb-10 px-5">
           <h1 className="my-4 text-3xl font-semibold lg:text-4xl">
             {items.length > 0 ? "Review your bag." : "Your bag is empty."}
           </h1>
@@ -134,8 +134,8 @@ export default function Checkout() {
                       </p>
                     </div>
 
-                    <div className="payment space-y-8 md:order-2">
-                      <h4 className="mb-4 flex flex-col text-sm ss:text-xl font-semibold">
+                    <div className="payment space-y-4 ss:space-y-8 md:order-2">
+                      <h4 className="mb-0 ss:mb-4 flex flex-col text-sm ss:text-xl font-semibold">
                         Pay in full
                         <span>
                           <Currency quantity={basketTotal} currency="USD" />
